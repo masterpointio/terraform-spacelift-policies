@@ -1,4 +1,6 @@
-output "random_pet_name" {
-  description = "The generated random pet name"
-  value       = random_pet.template.id
+output "all" {
+  description = "A map of Spacelift Policies with their attributes."
+  value = {
+    for name, policy in spacelift_policy.default : name => policy
+  }
 }
