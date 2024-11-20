@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.0 (2024-11-20)
+
+
+### Features
+
+* initial version ([162ca70](https://github.com/masterpointio/terraform-spacelift-policies/commit/162ca70de3c53c439482447736f6cd781f80308a))
+
 ## [0.2.0](https://github.com/masterpointio/terraform-module-template/compare/v0.1.1...v0.2.0) (2024-11-14)
 
 
