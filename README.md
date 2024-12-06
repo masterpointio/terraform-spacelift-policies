@@ -8,7 +8,7 @@ A Spacelift Policy is a set of rules and conditions defined to manage and contro
 
 > [!TIP]
 >
-> ### Attaching Policies to Spacelift Stacks
+> ## Attaching Policies to Spacelift Stacks
 >
 > Spacelift Policies can be attached to Spacelift Stacks via labels! [See the official Spacelift documentation](https://docs.spacelift.io/concepts/policy#automatically) that shows how policies with the label `autoattach:*` attaches to all stacks and `autoattach:label_here` attaches to all stacks with the `label_here` label.
 
