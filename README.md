@@ -6,6 +6,10 @@ This Terraform module allows you to manage [Spacelift Policies]((https://docs.sp
 
 A Spacelift Policy is a set of rules and conditions defined to manage and control the behavior of infrastructure as code (IaC) workflows within the Spacelift platform. Spacelift policies are written using the [Rego language](https://www.openpolicyagent.org/docs/latest/policy-language/), which is part of the Open Policy Agent (OPA) framework. These policies can enforce security, compliance, and operational best practices, ensuring that infrastructure changes adhere to organizational standards.
 
+> [!TIP]
+> #### Attaching Policies to Spacelift Stacks
+> Spacelift Policies can be attached to Spacelift Stacks via labels! [See the official Spacelift documentation](https://docs.spacelift.io/concepts/policy#automatically) that shows how policies with the label `autoattach:*` attaches to all stacks and `autoattach:label_here` attaches to all stacks with the `label_here` label.
+
 ## Usage
 
 Here’s an example of how to use this module in your Terraform configuration:
@@ -41,11 +45,17 @@ module "spacelift_policies" {
       body_file   = "policies/approval.role-based.rego"
       type        = "APPROVAL"
       description = "Gives certain roles the power to approve prod workloads."
-      labels      = ["env:prod"]
+      labels      = ["env:prod", "autoattach:needs-approvers"] # This policy will be auto-attached to stacks with the 'needs-approvers' label.
     }
   }
 }
 ```
+
+> [!TIP]
+> #### Testing your Spacelift OPA Rego Policies
+> Spacelift Policies use the Open Policy Agent (OPA) Rego language. You can test your policies using the [Rego Playground](https://play.openpolicyagent.org/).
+>
+> Masterpoint has an [open-source GitHub Action to automate the testing of OPA Rego policies](https://github.com/masterpointio/github-action-opa-rego-test). It is also showcased on [OPA Ecosystem's Integrations page](https://www.openpolicyagent.org/integrations/github-action-opa-rego-test/).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
