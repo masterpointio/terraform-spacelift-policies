@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/masterpointio/terraform-spacelift-policies/compare/v0.1.0...v0.2.0) (2024-12-08)
+
+
+### Features
+
+* **examples/complete:** add output to example ([99963bb](https://github.com/masterpointio/terraform-spacelift-policies/commit/99963bbc6965d928083fdeefd59b23ce2c22b0d2))
+
 ## 0.1.0 (2024-11-20)
 
 
