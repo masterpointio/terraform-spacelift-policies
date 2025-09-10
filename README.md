@@ -8,7 +8,7 @@
 
 ## Purpose and Functionality
 
-This Terraform module allows you to manage [Spacelift Policies]((https://docs.spacelift.io/concepts/policy/) in a flexible way. It enables you to define multiple policies with various configurations, including providing the policy code directly, via a URL, or from a file.
+This Terraform module allows you to manage [Spacelift Policies](https://docs.spacelift.io/concepts/policy/) in a flexible way. It enables you to define multiple policies with various configurations, including providing the policy code directly, via a URL, or from a file.
 
 A Spacelift Policy is a set of rules and conditions defined to manage and control the behavior of infrastructure as code (IaC) workflows within the Spacelift platform. Spacelift policies are written using the [Rego language](https://www.openpolicyagent.org/docs/latest/policy-language/), which is part of the Open Policy Agent (OPA) framework. These policies can enforce security, compliance, and operational best practices, ensuring that infrastructure changes adhere to organizational standards.
 
