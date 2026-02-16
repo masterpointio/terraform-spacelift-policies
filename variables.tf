@@ -6,6 +6,7 @@ variable "policies" {
     body_file   = optional(string, null)
     type        = string
     description = optional(string, null)
+    engine_type = optional(string, null)
     labels      = optional(list(string), [])
     space_id    = optional(string, null)
   }))
@@ -58,3 +59,4 @@ variable "policies" {
     EOT
   }
 }
+
