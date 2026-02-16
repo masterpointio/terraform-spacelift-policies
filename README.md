@@ -76,14 +76,14 @@ module "spacelift_policies" {
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
 | <a name="requirement_http"></a> [http](#requirement\_http) | >= 3.0 |
-| <a name="requirement_spacelift"></a> [spacelift](#requirement\_spacelift) | >= 1.0 |
+| <a name="requirement_spacelift"></a> [spacelift](#requirement\_spacelift) | >= 1.36 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_http"></a> [http](#provider\_http) | >= 3.0 |
-| <a name="provider_spacelift"></a> [spacelift](#provider\_spacelift) | >= 1.0 |
+| <a name="provider_spacelift"></a> [spacelift](#provider\_spacelift) | >= 1.36 |
 
 ## Modules
 

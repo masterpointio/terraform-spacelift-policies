@@ -11,11 +11,12 @@ locals {
 resource "spacelift_policy" "default" {
   for_each = var.policies
 
-  name     = format("%s-%s", module.this.id, each.key)
-  body     = local.body_map[each.key].body
-  type     = each.value.type
-  labels   = each.value.labels
-  space_id = each.value.space_id
+  name        = format("%s-%s", module.this.id, each.key)
+  body        = local.body_map[each.key].body
+  type        = each.value.type
+  engine_type = each.value.engine_type
+  labels      = each.value.labels
+  space_id    = each.value.space_id
 }
 
 data "http" "default" {
