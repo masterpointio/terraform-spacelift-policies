@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/masterpointio/terraform-spacelift-policies/compare/v0.2.0...v0.3.0) (2026-02-16)
+
+
+### Features
+
+* **main/default:** add engine_type ([#27](https://github.com/masterpointio/terraform-spacelift-policies/issues/27)) ([7bf1841](https://github.com/masterpointio/terraform-spacelift-policies/commit/7bf1841237eb4194930284f8c108f9711ebbda5b))
+
+
+### Bug Fixes
+
+* **docs:** Fix link formatting in README.md ([#20](https://github.com/masterpointio/terraform-spacelift-policies/issues/20)) ([3cdfb58](https://github.com/masterpointio/terraform-spacelift-policies/commit/3cdfb584ebc60a1f386b55dae3bb9b07b405386d))
+
 ## [0.2.0](https://github.com/masterpointio/terraform-spacelift-policies/compare/v0.1.0...v0.2.0) (2024-12-08)
 
 
