@@ -11,9 +11,10 @@ locals {
 resource "spacelift_policy" "default" {
   for_each = var.policies
 
-  name        = format("%s-%s", module.this.id, each.key)
+  name        = module.this.id != "" ? format("%s-%s", module.this.id, each.key) : each.key
   body        = local.body_map[each.key].body
   type        = each.value.type
+  description = each.value.description
   engine_type = each.value.engine_type
   labels      = each.value.labels
   space_id    = each.value.space_id
