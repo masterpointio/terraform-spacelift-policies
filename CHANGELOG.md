@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/masterpointio/terraform-spacelift-policies/compare/v0.3.0...v0.3.1) (2026-02-17)
+
+
+### Bug Fixes
+
+* prevent leading dash in policy names and add missing description field ([#29](https://github.com/masterpointio/terraform-spacelift-policies/issues/29)) ([6287163](https://github.com/masterpointio/terraform-spacelift-policies/commit/6287163dd7f161d2691c1985d8c3101f7ef564ee))
+
 ## [0.3.0](https://github.com/masterpointio/terraform-spacelift-policies/compare/v0.2.0...v0.3.0) (2026-02-16)
 
 
