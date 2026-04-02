@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/masterpointio/terraform-spacelift-policies/compare/v0.3.1...v0.3.2) (2026-04-02)
+
+
+### Bug Fixes
+
+* pin GitHub Actions to commit SHAs (INT-326) ([#33](https://github.com/masterpointio/terraform-spacelift-policies/issues/33)) ([fb1fa21](https://github.com/masterpointio/terraform-spacelift-policies/commit/fb1fa21484809c27eb27ba1c153c5dc02b2849c2))
+
 ## [0.3.1](https://github.com/masterpointio/terraform-spacelift-policies/compare/v0.3.0...v0.3.1) (2026-02-17)
 
 
